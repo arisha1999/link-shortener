@@ -1,6 +1,11 @@
 # set base image (host OS)
 FROM python:3.9-slim
 
+# Install Node.js and npm
+RUN apt-get update && apt-get install -y curl
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs
+
 # Install Node.js and Vue CLI
 RUN apt-get update && apt-get install -y nodejs
 RUN npm install -g @vue/cli
