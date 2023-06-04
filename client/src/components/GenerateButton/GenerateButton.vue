@@ -68,7 +68,7 @@ export default {
       })
     },
     getImageUrl(filename) {
-      return require(`@/assets/images/${filename}`);
+      return require(`../../assets/images/${filename}`);
     }
   },
   components: {
