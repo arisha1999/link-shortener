@@ -1,17 +1,17 @@
 <template>
     <div class="main-container">
-        <GenerateButton /> 
+        <GenerateLink /> 
         <ScreenshotField :screenshotUrl="screenshotUrl" /> 
         <ErrorAlert :errorMessage="errorMessage" />
     </div>
 </template>
 
 <script>
-    import GenerateButton from '@/components/GenerateButton/GenerateButton.vue' 
+    import GenerateLink from '@/components/GenerateLink/GenerateLink.vue' 
     import ErrorAlert from '@/components/ErrorAlert/ErrorAlert.vue' 
     export default { 
         components: { 
-            GenerateButton,
+            GenerateLink,
             ErrorAlert 
         }, 
         data() { 
