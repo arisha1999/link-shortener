@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, render_template, request
 from flask_cors import CORS
-from server.db import connection
-from server.utils import save_url
+from db import connection
+from utils import save_url
 import atexit
 
 app = Flask(__name__)

@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from server.db import connection
+from db import connection
 
 
 def get_screenshot(url):
