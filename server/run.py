@@ -20,7 +20,7 @@ def get_redirect_url():
             result = cursor.fetchone()
             long_url = result[0]
             return long_url
-    except ExceptionGroup as _ex:
+    except Exception as _ex:
         print("[INFO] Error while working with PostgreSQL", _ex)
 
 @app.route('/saveurl', methods=['POST'])

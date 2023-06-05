@@ -55,7 +55,7 @@ def save_url(original_url):
         with connection.cursor() as cursor:
             cursor.execute('INSERT INTO shorturls (firsturl, shorturl) VALUES (%s, %s)',(original_url, short_url))
             connection.commit()
-    except ExceptionGroup as _ex:
+    except Exception as _ex:
         print("[INFO] Error while working with PostgreSQL", _ex)
     finally:
         return short_url, screenshot_data

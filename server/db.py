@@ -16,5 +16,5 @@ try:
         password=password,
         database=db_name
     )
-except ExceptionGroup as _ex:
+except Exception as _ex:
         print("[INFO] Error while working with PostgreSQL", _ex)
