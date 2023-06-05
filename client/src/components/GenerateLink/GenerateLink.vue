@@ -56,7 +56,6 @@ export default {
       }
       axios.post('http://localhost:5000/saveurl', {url: this.url}, {headers})
       .then(response => {
-        // console.log(response.data)
         this.shortUrl = response.data.shortUrl;
         this.screenshot = response.data.screenshot;
       })
