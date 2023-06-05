@@ -25,7 +25,7 @@ WORKDIR /code
 
 COPY server/. ./server/
 
-COPY run.py .
+WORKDIR /code/server
 
 EXPOSE 5000
 
